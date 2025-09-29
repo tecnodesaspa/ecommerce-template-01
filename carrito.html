@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./nova.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <!-- Barra navegación -->
+    <nav class="nav bg-dark">
+        <div class="nav-menu-responsive">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg>
+        </div>
+        <div class="nav-menu">
+            <a href="/"><b>Nombre de tienda</b></a>
+            <a href="/categoria.html">Orgánicos</a>
+            <a href="/categoria.html">Blancos</a>
+            <a href="/categoria.html">Marrones</a>
+            <a href="/categoria.html">Especiales</a>
+        </div>
+        <div class="shopping-cart hidde" id="open-cart">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff">
+                <path
+                    d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z" />
+            </svg>
+            <p>Carrito</p>
+            <div class="shopping-cart-num" id="shoppingCart">
+                3
+            </div>
+        </div>
+    </nav>
+
+    <!-- Oferta -->
+    <section class="sale">
+        Septiembre llegó con regalo 🎉 objten un 10% por la compra de 10 bandejas 🚛 despacjos a todo Chile 🍳 TIEMPO
+        ESTIMADO DE DESPACHO 6 - 7 DÍAS HÁBILES
+    </section>
+
+    <section class="container fade-up">
+        <div class="card pl-2 pb-2 pr-2 of-auto">
+            <h1>Carrito</h1>
+            <div class="row">
+                <div class="col-8">
+                    <div class="title-total ">
+                        <h2 class="m-0">Producto</h2>
+                        <h2 class="m-0">Total</h2>
+                    </div>
+                    <hr>
+                    <!-- item 1 -->
+                    <div class="container-item-cart mt-1">
+                        <div class="item-cart">
+                            <div class="product-img"></div>
+                            <div class="detail-product-item-cart">
+                                <h3>Huevos de cordorniz</h3>
+                                <p class="price">$5.000</p>
+                                <p class="detail">Lorem ipsum dolor sit amet...</p>
+                                <input type="number" value="1" class="input-form mt-1"><br>
+                                <button class="btn-delete mt-1">Eliminar articulo</button>
+                            </div>
+                        </div>
+                        <h3>$5.000</h3>
+                    </div>
+
+                    <!-- item 2 -->
+                    <div class="container-item-cart mt-2">
+                        <div class="item-cart">
+                            <div class="product-img"></div>
+                            <div class="detail-product-item-cart">
+                                <h3>Huevos de cordorniz</h3>
+                                <p class="price">$5.000</p>
+                                <p class="detail">Lorem ipsum dolor sit amet...</p>
+                                <input type="number" value="1" class="input-form mt-1"><br>
+                                <button class="btn-delete mt-1">Eliminar articulo</button>
+                            </div>
+                        </div>
+                        <h3>$5.000</h3>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <h2>Total del carrito</h2>
+                    <hr>
+                    <div class="title-total">
+                        <p>Total estimado</p>
+                        <p>$10.000</p>
+                    </div>
+                    <button class="btn btn-primary full-width" onclick="goToFinish()">Finalizar compra</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Links -->
+    <section class="links grid-4 mt-5 g-3 fade-in">
+        <div class="link">
+            <h3>Información</h3>
+            <hr>
+            <p>Quienes somos</p>
+            <p>Condiciones</p>
+        </div>
+        <div class="link">
+            <h3>Contacto</h3>
+            <hr>
+            <p>Telefono</p>
+            <p>+56 9 8742 5414</p>
+            <p>Email</p>
+            <p>email@email.com</p>
+        </div>
+        <div class="link">
+            <h3>Dirección</h3>
+            <hr>
+            <p>dirección, comuna, calle #123</p>
+            <p>08:00am hasta las 9:30pm</p>
+        </div>
+        <div class="link">
+            <h3>Redes sociales</h3>
+            <hr>
+            <!-- iconos -->
+            <div class="input-group">
+                <label for="">Te contactamos</label>
+                <div class="input-button">
+                    <input type="text">
+                    <button class="btn-success">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer bg-dark">
+        Todos los derechos reservados
+    </footer>
+
+    <!-- Carrito de compras -->
+    <div class="overlay" id="overlay"></div>
+    <section class="shopping-cart-view" id="cart">
+        <div>
+            <div class="close" id="close-cart">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#333">
+                    <path
+                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                </svg>
+            </div>
+            <h2 id="titleShoppingCart">Tu carrito (1 articulo)</h2>
+            <div class="item-cart">
+                <div class="product-img"></div>
+                <div class="detail-product-item-cart">
+                    <h3>Huevos de cordorniz</h3>
+                    <p class="price">$5.000</p>
+                    <p class="detail">Lorem ipsum dolor sit amet...</p>
+                    <input type="number" value="8" class="input-form mt-1"><br>
+                    <button class="btn-delete mt-1">Eliminar articulo</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-total">
+            <div class="title-total">
+                <h2>Subtotal</h2>
+                <p>$40.000</p>
+            </div>
+            <p>El envío, impuestos y descuentos se calculan al finalizar compra</p>
+            <div class="container-buttons">
+                <button class="btn btn-success full-width" onclick="goToShoppingCart()">Ver mi carrito</button>
+                <button class="btn btn-primary full-width" onclick="goToFinish()">Ir a finalizar compra</button>
+            </div>
+        </div>
+    </section>
+    <script src="./nova.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

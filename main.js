@@ -35,19 +35,19 @@ function addToCart(idQuant, product){
 }
 
 function goToCategory(){
-    window.location.href = '/categoria.html'
+    window.location.href = '/ecommerce-template-01/categoria.html'
 }
 
 function goToDetail(){
-    window.location.href = '/detalle.html'
+    window.location.href = '/ecommerce-template-01/detalle.html'
 }
 
 function goToShoppingCart(){
-    window.location.href = '/carrito.html'
+    window.location.href = '/ecommerce-template-01/carrito.html'
 }
 
 function goToFinish(){
-    window.location.href = '/finalizar.html'
+    window.location.href = '/ecommerce-template-01/finalizar.html'
 }
 
 function openShoppingCart() {

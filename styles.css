@@ -251,7 +251,6 @@ h2{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
-    width: 50vw;
     height: 60vh;
 }
 
@@ -449,5 +448,8 @@ h2{
     }
     .title-total{
         flex-direction: column;
+    }
+    .shopping-cart-view {
+        width: 90vw;
     }
 }

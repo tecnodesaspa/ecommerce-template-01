@@ -16,9 +16,13 @@ a{
 nav .nav-menu-responsive{
     display: none !important;
 }
-nav .nav-menu{
+nav .nav-menu ul{
     display: flex;
     gap: 1.5rem;
+    text-decoration: none;
+}
+nav .nav-menu ul li{
+    list-style-type: none;
 }
 nav .shopping-cart{
     border: 2px solid white;
